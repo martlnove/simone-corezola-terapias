@@ -1,11 +1,83 @@
-body, .institucional{
-    background-color: #E6DDC4;
+:root {
+    --creme: #E6DDC4;
+    --rosa: #CB999D;
+    --lilas: #7B5CB5;
+    --lilas-escuro: #6A4BA8;
+    --ameixa: #3D2440;
+    --cinza: #F5F5F5;
 }
 
-.header-background {
-    background-color: #CD9A9F;
+body, .institucional {
+    background-color: var(--creme);
 }
 
-.btn-success{
-    background-color: #9575CD;
+.header-background, .hero {
+    background-color: var(--rosa);
+    color: var(--ameixa);
+}
+
+.marca {
+    color: var(--ameixa);
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.hero h1 {
+    font-weight: 700;
+}
+
+.hero-lotus {
+    max-width: 260px;
+}
+
+.btn-whatsapp {
+    background-color: var(--lilas-escuro);
+    border-color: var(--lilas-escuro);
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-whatsapp:hover, .btn-whatsapp:focus {
+    background-color: #553a8c;
+    border-color: #553a8c;
+    color: #fff;
+}
+
+.btn-whatsapp svg {
+    width: 1.25em;
+    height: 1.25em;
+    vertical-align: -0.2em;
+}
+
+.card-servico {
+    background-color: var(--lilas);
+    color: #fff;
+}
+
+.card-modalidade {
+    background-color: var(--rosa);
+    color: var(--ameixa);
+}
+
+.card-pacote {
+    background-color: var(--cinza);
+    color: var(--lilas-escuro);
+}
+
+.card-pacote .preco {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.card-icone {
+    max-width: 70%;
+    height: auto;
+}
+
+.card-pacote .card-icone {
+    max-width: 90px;
+}
+
+.card-icone-estreito {
+    max-width: 35%;
 }
